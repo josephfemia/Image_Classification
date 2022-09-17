@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu113/"
+verify_ssl = false
+name = "pytorch"
+
+[packages]
+notebook = "*"
+jupyterlab = "*"
+ipynb = "*"
+ipykernel = "*"
+ipywidgets = "*"
+numpy = "*"
+matplotlib = "*"
+torch = {version="*", index="pytorch"}
+torchvision = {version="*", index="pytorch"}
+torchaudio = {version="*", index="pytorch"}
+autopep8 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
